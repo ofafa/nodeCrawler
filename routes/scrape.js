@@ -16,10 +16,12 @@ router.get('/', function(req, res) {
         console.log('fetching data...');
         if(!err){
             console.log('analyzing data...');
+            // $ = cheerio.load(html_file) -> the first step or $ = require('cheerio'); $(html);
             var $ = cheerio.load(html);
             var title, release, rating;
             var json = { title:"", release:"", rating:""};
             //start from an unique header class
+
             $('.header').filter(function(){
                 //see what is in the filtered content
                 console.log('filtering data...');
