@@ -1,0 +1,12 @@
+{
+  "name": "nodeCrawler",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {},
+  "dependencies" : {
+    "request": "*",
+    "cheerio": "*",
+    "express": "*",
+    "ejs": "*"
+  }
+}
